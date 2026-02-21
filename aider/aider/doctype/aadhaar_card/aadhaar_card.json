@@ -9,7 +9,8 @@
   "name_link",
   "full_name",
   "aadhaar_number",
-  "mobile_number"
+  "mobile_number",
+  "city"
  ],
  "fields": [
   {
@@ -34,6 +35,11 @@
    "fieldname": "mobile_number",
    "fieldtype": "Data",
    "label": "Mobile Number"
+  },
+  {
+   "fieldname": "city",
+   "fieldtype": "Data",
+   "label": "City"
   }
  ],
  "index_web_pages_for_search": 1,
