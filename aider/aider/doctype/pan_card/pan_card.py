@@ -12,3 +12,8 @@ class PanCard(Document):
                 frappe.throw("Mobile Number must be exactly 10 digits")
         if not self.authority or not str(self.authority).strip():
             frappe.throw("Authority is required")
+        # Validate circle field
+        if not self.circle:
+            frappe.throw("Circle is required. Please select State or Central.")
+        if self.circle not in ["State", "Central"]:
+            frappe.throw("Circle must be either 'State' or 'Central'.")
