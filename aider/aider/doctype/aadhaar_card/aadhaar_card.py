@@ -12,4 +12,4 @@ class AadhaarCard(Document):
         if self.mobile_number:
             if not re.match(r'^\d{10}$', str(self.mobile_number)):
                 frappe.throw("Mobile Number must be exactly 10 digits")
-        # City field is present but no validation is required
+        # City field (data) - no validation required
