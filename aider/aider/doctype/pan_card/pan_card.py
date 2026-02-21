@@ -10,8 +10,8 @@ class PanCard(Document):
         if self.mobile_number:
             if not re.match(r'^\d{10}$', str(self.mobile_number)):
                 frappe.throw("Mobile Number must be exactly 10 digits")
-        if not self.authority or not str(self.authority).strip():
-            frappe.throw("Authority is required")
+        if not self.office or not str(self.office).strip():
+            frappe.throw("Office is required")
         # Validate circle field
         if not self.circle:
             frappe.throw("Circle is required. Please select State or Central.")

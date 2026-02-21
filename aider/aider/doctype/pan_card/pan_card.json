@@ -10,7 +10,7 @@
   "full_name",
   "pan_number",
   "mobile_number",
-  "authority",
+  "office",
   "circle"
  ],
  "fields": [
@@ -38,9 +38,9 @@
    "label": "Mobile Number"
   },
   {
-   "fieldname": "authority",
+   "fieldname": "office",
    "fieldtype": "Data",
-   "label": "Authority"
+   "label": "Office"
   },
   {
    "fieldname": "circle",
