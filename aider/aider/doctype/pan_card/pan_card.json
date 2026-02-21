@@ -10,7 +10,8 @@
   "full_name",
   "pan_number",
   "mobile_number",
-  "authority"
+  "authority",
+  "circle"
  ],
  "fields": [
   {
@@ -40,6 +41,12 @@
    "fieldname": "authority",
    "fieldtype": "Data",
    "label": "Authority"
+  },
+  {
+   "fieldname": "circle",
+   "fieldtype": "Select",
+   "label": "Circle",
+   "options": "State\nCentral"
   }
  ],
  "index_web_pages_for_search": 1,
