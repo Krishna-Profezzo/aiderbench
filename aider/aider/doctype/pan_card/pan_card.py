@@ -10,3 +10,5 @@ class PanCard(Document):
         if self.mobile_number:
             if not re.match(r'^\d{10}$', str(self.mobile_number)):
                 frappe.throw("Mobile Number must be exactly 10 digits")
+        if not self.authority or not str(self.authority).strip():
+            frappe.throw("Authority is required")

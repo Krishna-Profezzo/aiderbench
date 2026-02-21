@@ -9,7 +9,8 @@
   "name_link",
   "full_name",
   "pan_number",
-  "mobile_number"
+  "mobile_number",
+  "authority"
  ],
  "fields": [
   {
@@ -34,6 +35,11 @@
    "fieldname": "mobile_number",
    "fieldtype": "Data",
    "label": "Mobile Number"
+  },
+  {
+   "fieldname": "authority",
+   "fieldtype": "Data",
+   "label": "Authority"
   }
  ],
  "index_web_pages_for_search": 1,
