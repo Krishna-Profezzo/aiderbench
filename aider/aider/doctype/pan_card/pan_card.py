@@ -3,6 +3,10 @@ import re
 from frappe.model.document import Document
 
 class PanCard(Document):
+    """
+    Represents a PAN Card document with validation for PAN number,
+    mobile number, office, and circle.
+    """
     def validate(self):
         if self.pan_number:
             if not re.match(r'^[A-Z]{5}[0-9]{4}[A-Z]{1}$', str(self.pan_number)):
